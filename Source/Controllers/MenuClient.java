@@ -144,6 +144,9 @@ public class MenuClient {
     }
 
     public void displayClients(){
+        if(clients.size() == 0){
+            System.out.println("There are no clients added yet!");
+        }
         for(int i=0;i<clients.size();i++){
             Client client = clients.get(i);
             System.out.println(client.getId()+" "+client.getName()+" "+client.getEmail());

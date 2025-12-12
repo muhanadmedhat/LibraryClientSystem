@@ -73,7 +73,7 @@ public class MenuLibrary {
             choice = input.nextLine();
             choiceNumber = Helper.integerChecker(choice);
         }
-        System.out.println("Enter the ID of the book");
+        System.out.println("Enter the ID of the item");
         String idString = input.nextLine();
         Integer Id = Helper.integerChecker(idString);
         while(Id == -1){

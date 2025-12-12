@@ -36,6 +36,10 @@ public class Client {
     }
 
     public void getClientItems(){
+        if(clientItems.size() == 0){
+            System.out.println("There are no items for this client yet!");
+            return;
+        }
         for(int i=0;i<clientItems.size();i++){
             LibraryItem item = clientItems.get(i);
             item.getItemDetails();

@@ -22,7 +22,7 @@ public class Library <T extends LibraryItem> {
     public void addItem(T item){
         Integer itemId = item.getId();
         String itemTitle = item.getTitle();
-        Integer stock = item.getStock();
+        //Integer stock = item.getStock();
        for(int i=0;i<libraryItems.size();i++) {
             if(itemId.equals(libraryItems.get(i).getId())){
                 System.out.println("This ID is already used");
@@ -34,7 +34,7 @@ public class Library <T extends LibraryItem> {
             }
        }
        libraryItems.add(item);
-       System.out.println("========Element added successfully========");
+       System.out.println("========Item added successfully========");
     }
 
     public void getItem(Integer ind) throws ItemNotFoundException{
@@ -49,6 +49,10 @@ public class Library <T extends LibraryItem> {
     }
 
     public void viewItems(){
+        if(libraryItems.size() == 0){
+            System.out.println("There are no items in the library yet!");
+            return;
+        }
         for(int i=0;i<libraryItems.size();i++){
             LibraryItem lItem = libraryItems.get(i);
             lItem.getItemDetails();

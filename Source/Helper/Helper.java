@@ -14,7 +14,7 @@ public class Helper {
             return num;
         } catch (Exception e) {
             // TODO: handle exception
-            System.out.println("Invalid integer");
+            //System.out.println("Invalid integer");
             return -1;
         }
     }
@@ -24,7 +24,7 @@ public class Helper {
         for(int i=0;i<str.length();i++){
             Character c = str.charAt(i);
             if(!Character.isLetter(c)){
-                System.out.println("Invalid data");
+                //System.out.println("Invalid data");
                 return "";
             }
         }

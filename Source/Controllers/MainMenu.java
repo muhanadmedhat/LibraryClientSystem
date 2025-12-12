@@ -94,6 +94,7 @@ public class MainMenu {
         Integer newStock = currentStock + 1;
         libraryItem.setStock(newStock);
         client.removeElement(libraryItem);
+        System.out.println("========Item returned successfully========");
     }
 
     public void borrowElement(Integer userId , Integer elementId){
@@ -121,5 +122,6 @@ public class MainMenu {
         Integer newStock = currentStock - 1;
         libraryItem.setStock(newStock);
         client.addElement(libraryItem);
+        System.out.println("========Item borrowed successfully========");
     }
 }
