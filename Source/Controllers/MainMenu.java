@@ -1,10 +1,11 @@
 package Controllers;
 import Helper.Helper;
+import Interfaces.MenuInterface;
 import Models.Client;
 import Models.LibraryItem;
 
 import java.util.*;
-public class MainMenu {
+public class MainMenu implements MenuInterface {
     private MenuClient menuClient;
     private MenuLibrary menuLibrary;
     public MainMenu(){

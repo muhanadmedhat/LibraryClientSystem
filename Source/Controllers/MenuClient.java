@@ -3,8 +3,9 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 import Helper.Helper;
+import Interfaces.MenuInterface;
 import Models.Client;
-public class MenuClient {
+public class MenuClient implements MenuInterface {
     
     private List<Client> clients;
     

@@ -2,12 +2,13 @@ package Controllers;
 import java.util.*;
 
 import Exceptions.ItemNotFoundException;
-import Helper.Helper; 
+import Helper.Helper;
+import Interfaces.MenuInterface;
 import Models.Book;
 import Models.LibraryItem;
 import Models.Magazine;
 
-public class MenuLibrary {
+public class MenuLibrary implements MenuInterface {
     private Library<LibraryItem> library;
     //private 
     public MenuLibrary(){
